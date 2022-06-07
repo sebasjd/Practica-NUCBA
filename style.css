@@ -1,0 +1,260 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: rgb(178, 175, 175);
+  background: linear-gradient(
+    90deg,
+    rgb(142, 142, 142) 0%,
+    rgb(218, 219, 204) 48%,
+    rgb(174, 173, 173) 100%
+  );
+}
+
+nav {
+  background-color: rgb(22, 22, 22);
+  height: 8vh;
+  padding-left: 1rem;
+  padding-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: rgb(140, 150, 2);
+  min-width: 7rem;
+  display: flex;
+  font-size: 2.5rem;
+  margin-right: 4rem;
+  position: relative;
+  top: -0.2rem;
+}
+
+nav a {
+  color: rgb(222, 219, 157);
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+}
+
+.links {
+  justify-content: space-between;
+  display: flex;
+  padding-right: 5rem;
+  height: 100%;
+  align-items: center;
+}
+
+.links a {
+  transition: 0.2s;
+}
+
+.links a:hover {
+  border-bottom: 0.3rem solid yellow;
+  padding-bottom: 0.2rem;
+  color: black;
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow,
+    0 0 1rem yellow;
+  margin-bottom: -0.5rem;
+  cursor: pointer;
+}
+
+.redes a {
+  display: block;
+  width: 4rem;
+}
+
+.redes {
+  position: absolute;
+  background-color: rgba(22, 22, 22, 1);
+  right: 0%;
+  top: 2.6rem;
+  width: 10rem;
+  height: 5rem;
+  display: none;
+  padding-top: 1rem;
+  border-radius: 10%;
+  border-bottom-right-radius: 0;
+}
+
+.redes a {
+  margin-bottom: 1rem;
+  color: rgb(222, 219, 157);
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.redes a:hover {
+  border-bottom: 0.3rem solid yellow;
+  padding-bottom: 0.2rem;
+  color: black;
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow,
+    0 0 1rem yellow;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.REDES:hover ~ .redes,
+.links .redes:hover {
+  display: block;
+}
+
+/* Hasta aquí la nav-bar */
+
+#inicio {
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 92vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 248, 248, 0) 58%,
+    rgba(10, 10, 10, 0.44861694677871145) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+section {
+  display: flex;
+  padding-left: 3vw;
+  padding-right: 6vw;
+  padding-top: 9vh;
+}
+section h1,
+section p {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+
+section .slogan {
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  max-width: 50%;
+  letter-spacing: 0.1vw;
+}
+
+.slogan span {
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
+}
+
+section p {
+  font-size: 1.2rem;
+  position: absolute;
+  display: flex;
+  top: 19rem;
+  max-width: 50%;
+  font-weight: bold;
+  min-width: 400px;
+}
+
+#inicio a, #inicio a:visited {
+  position: relative;
+  flex-direction: row;
+  margin: 2vw;
+  top: 60vh;
+  left: 7vw;
+  padding: 1vw;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(136, 139, 115) 0%,
+    rgb(213, 216, 170) 48%,
+    rgb(173, 174, 155) 100%
+  );
+  border: solid 0.2vw;
+  color: black;
+  font-size: 110%;
+  font-weight: bold;
+  right: 50%;
+  justify-content: center;
+  transition-duration: .5s;
+}
+#inicio a:hover {
+  background: none;
+  box-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+  0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;  
+  color: yellow;
+  border: solid rgba(255, 248, 248, 0);
+
+}
+
+section img {
+  position: absolute;
+  float: right;
+  display: flex;
+  right: 6vw;
+  margin-top: 3rem;
+  max-width: 44%;
+  width: 25rem;
+}
+
+
+
+/* Hasta aquí el inicio */
+
+#quienesSomos {
+  padding: 0;
+  margin-top: -5.5vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 10, 10, 0.44861694677871145) 7%,
+    rgba(255, 248, 248, 0) 16%
+  ), linear-gradient(
+    180deg,
+    rgba(255, 248, 248, 0) 85%,
+    rgba(10, 10, 10, 0.44861694677871145) 95%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 190vh;
+  display: block;
+  justify-content: space-between;
+  align-content: center;
+  
+}
+
+#quienesSomos h1 {
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  letter-spacing: 0.1vw;
+  justify-content: center;
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
+  padding-top: 6vh;
+}
+
+#quienesSomos p {
+  font-size: 1.2rem;
+  position: absolute;
+  display: block;
+  top: 116vh;
+  margin: 5vh;
+  font-weight: bold;
+  width: 60%;
+}
+
+#quienesSomos p {
+  position: absolute;
+}
+
+#quienesSomos img {
+  position: absolute;
+  float: right;
+  display: flex;
+  right: 6vw;
+  margin-top: 3rem;
+  max-width: 30%;
+  width: 25rem;
+}
