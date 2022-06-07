@@ -219,7 +219,7 @@ section img {
       rgba(10, 10, 10, 0.44861694677871145) 95%,
       rgba(0, 0, 0, 1) 100%
     );
-  min-height: 190vh;
+  min-height: 150vh;
   height: fit-content;
   display: block;
   align-content: center;
