@@ -12,6 +12,7 @@ body {
     rgb(218, 219, 204) 48%,
     rgb(174, 173, 173) 100%
   );
+
 }
 
 nav {
@@ -125,20 +126,22 @@ section {
   padding-right: 6vw;
   padding-top: 9vh;
 }
+
 section h1,
 section p {
-  position: absolute;
   display: flex;
   flex-direction: column;
   margin-left: 3vw;
+  max-width: 45%;
 }
 
 section .slogan {
+  position: absolute;
   font-size: 3rem;
   text-align: center;
-  display: flex;
-  max-width: 50%;
-  letter-spacing: 0.1vw;
+  letter-spacing: 0.1vw 0.vw;
+  top: 5vw;
+
 }
 
 .slogan span {
@@ -147,11 +150,10 @@ section .slogan {
 }
 
 section p {
-  font-size: 1.2rem;
   position: absolute;
-  display: flex;
-  top: 19rem;
-  max-width: 50%;
+  font-size: 1.2rem;
+  top: auto;
+  bottom: 25vh;
   font-weight: bold;
   min-width: 400px;
 }
@@ -160,9 +162,9 @@ section p {
 #inicio a:visited {
   position: relative;
   flex-direction: row;
-  margin: 2vw;
-  top: 60vh;
-  left: 12.5%;
+  justify-content: space-between;
+  top: auto;
+  bottom: -60vh;
   padding: 1vw;
   border-radius: 10px;
   cursor: pointer;
@@ -189,11 +191,9 @@ section p {
 section img {
   position: absolute;
   float: right;
-  display: flex;
   right: 6vw;
   margin-top: 3rem;
-  max-width: 44%;
-  width: 25rem;
+  width: 44%;
 }
 
 /* Hasta aquí el inicio */
@@ -233,11 +233,11 @@ section img {
 
 #quienesSomos p {
   font-size: 1.2rem;
-  position: absolute;
   display: block;
   top: 116vh;
   margin: 5vh;
   font-weight: bold;
+  padding-bottom: 10vh;
 }
 
 #quienesSomos img {
