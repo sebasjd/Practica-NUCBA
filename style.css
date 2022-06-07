@@ -156,12 +156,13 @@ section p {
   min-width: 400px;
 }
 
-#inicio a, #inicio a:visited {
+#inicio a,
+#inicio a:visited {
   position: relative;
   flex-direction: row;
   margin: 2vw;
   top: 60vh;
-  left: 7vw;
+  left: 12.5%;
   padding: 1vw;
   border-radius: 10px;
   cursor: pointer;
@@ -175,17 +176,14 @@ section p {
   color: black;
   font-size: 110%;
   font-weight: bold;
-  right: 50%;
-  justify-content: center;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 #inicio a:hover {
   background: none;
   box-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
-  0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;  
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
   color: yellow;
   border: solid rgba(255, 248, 248, 0);
-
 }
 
 section img {
@@ -198,29 +196,27 @@ section img {
   width: 25rem;
 }
 
-
-
 /* Hasta aquí el inicio */
 
 #quienesSomos {
   padding: 0;
   margin-top: -5.5vh;
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(10, 10, 10, 0.44861694677871145) 7%,
-    rgba(255, 248, 248, 0) 16%
-  ), linear-gradient(
-    180deg,
-    rgba(255, 248, 248, 0) 85%,
-    rgba(10, 10, 10, 0.44861694677871145) 95%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  height: 190vh;
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(10, 10, 10, 0.44861694677871145) 7%,
+      rgba(255, 248, 248, 0) 16%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 248, 248, 0) 85%,
+      rgba(10, 10, 10, 0.44861694677871145) 95%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  min-height: 190vh;
+  height: fit-content;
   display: block;
-  justify-content: space-between;
   align-content: center;
-  
 }
 
 #quienesSomos h1 {
@@ -242,19 +238,13 @@ section img {
   top: 116vh;
   margin: 5vh;
   font-weight: bold;
-  width: 60%;
-}
-
-#quienesSomos p {
-  position: absolute;
 }
 
 #quienesSomos img {
-  position: absolute;
   float: right;
   display: flex;
   right: 6vw;
   margin-top: 3rem;
-  max-width: 30%;
-  width: 25rem;
+  max-width: 40%;
+  width: 30rem;
 }
