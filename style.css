@@ -254,3 +254,56 @@ section img {
   max-width: 40%;
   width: 30rem;
 }
+
+
+/* ############
+   #RESPONSIVE#
+   ############ */
+
+   @media screen and (max-device-width: 700px) {
+
+
+/* #############################
+   #                           #
+   #    RESPONDER LA NAV       #
+   #                           #
+   ############################# */
+
+
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+     
+    section .slogan {
+      font-size: 250%;
+      max-width:90%;
+    }
+
+    section p {
+      bottom: 50vh;
+      max-width:90%;
+    }
+
+    section img {
+      bottom: 5%;
+      margin-left: 25%;
+      margin-right: 25%;
+
+    }
+     
+    #inicio a {
+  top: auto;
+  bottom: -35vh;
+  margin: 0 3vw;
+}
+
+#inicio ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+   }
