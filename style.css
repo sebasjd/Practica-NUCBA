@@ -362,6 +362,10 @@ footer a{
 
   /* Menú hamburguesa y slim design */
 
+  .links {
+    display: none;
+  }
+
   section p {
     top: 40vh;
     bottom: auto;
@@ -386,4 +390,16 @@ footer a{
 
 footer{
   display: none;
+}
+
+
+@media screen and (max-device-width: 372px) {
+
+section .slogan {
+  font-size: 10vw;
+}
+section p {
+  top: auto;
+  bottom: 10vh;
+}
 }
