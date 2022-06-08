@@ -357,3 +357,32 @@ footer a{
   padding: 0;
 }
 }
+
+@media screen and (max-device-width: 542px) {
+
+  /* Menú hamburguesa y slim design */
+
+  section p {
+    top: 40vh;
+    bottom: auto;
+    text-align: justify;
+  }
+  #inicio a {
+    top: 67vh;
+    bottom: auto;
+    margin: 0 3vw;
+  }
+  section .slogan {
+    margin-top: 7vh;
+  }
+  section img {
+    bottom: 25%;
+    width: 75%;
+    margin: 0 6%;
+    opacity: .3;
+  }
+}
+
+footer{
+  display: none;
+}
