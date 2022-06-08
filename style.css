@@ -23,6 +23,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
 .logo {
@@ -47,6 +50,10 @@ nav a {
   padding-right: 5rem;
   height: 100%;
   align-items: center;
+}
+
+.links .volver {
+  display: none;
 }
 
 .links a {
@@ -234,7 +241,7 @@ section img {
   justify-content: center;
   text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
     0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
-  padding-top: 6vh;
+  padding-top: 10vh;
 }
 
 #quienesSomos p {
@@ -244,6 +251,7 @@ section img {
   margin: 5vh;
   font-weight: bold;
   padding-bottom: 10vh;
+  margin-bottom: 0px;
 }
 
 #quienesSomos img {
@@ -256,20 +264,62 @@ section img {
 }
 
 
+
+
+footer{
+
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(10, 10, 10, 0.44861694677871145) 15%,
+      rgba(255, 248, 248, 0) 25%
+    );
+    padding-top: 3vh;
+}
+
+footer ul{
+  width: 500px;
+  display: flex;
+}
+footer a{
+  margin: 0 5vw;
+  bottom: 25%;
+}
+
+
 /* ############
    #RESPONSIVE#
    ############ */
 
+   
+   @media screen and (max-device-width: 850px) {
+    /* SE REDUCE LA NAV */
+
+    .logo {
+      margin-right: 0px;
+      padding-right: 0;
+    }
+
+    .links{
+      padding: 0;
+      padding-right: 6vw;
+      margin-left: 0;
+    }
+
+    .links .volver{
+      display: inline-block;
+    }
+
+    .links .quienes, 
+    .links .contacto {
+      display: none;
+    }
+  }
+
+
+ 
+
    @media screen and (max-device-width: 700px) {
-
-
-/* #############################
-   #                           #
-   #       REDUCIR NAV         #
-   #                           #
-   ############################# */
-
-
 
     section {
       display: flex;
@@ -306,4 +356,4 @@ section img {
   width: 100%;
   padding: 0;
 }
-   }
+}
