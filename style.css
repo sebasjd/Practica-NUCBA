@@ -264,10 +264,130 @@ section img {
 }
 
 
+/* ###  Por que nosotros?  ### */
+
+.porQueNosotros{
+  height: 93vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 10, 10, 0.44861694677871145) 7%,
+    rgba(255, 248, 248, 0) 16%
+  ),
+  linear-gradient(
+    180deg,
+    rgba(255, 248, 248, 0) 85%,
+    rgba(10, 10, 10, 0.44861694677871145) 95%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+}
+.porQueNosotros h1 {
+  margin-top: 0vh;
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  letter-spacing: 0.1vw;
+  justify-content: center;
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
+  padding-top: 5vh;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1vh;
+  margin-left: 0;
+}
+
+
+
+.tarjetas .tarjeta {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: right;
+  width: 25vw;
+  height: 50vh;
+  margin: 0.7rem;
+  border-radius: 10%;
+  padding: 1rem;
+  position: relative;
+  background-blend-mode: darken;
+  transition: all .5s;
+}
+
+
+.tarjeta .nombre {
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 15%;
+  background: rgba(15, 15, 15, 0.5);
+  color: beige;
+  display: flex;
+  position: absolute;
+  max-width: 85%;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+.tarjeta .descripcion {
+  color: bisque;
+  padding: 1vw 2vh;
+  font-weight: bold;
+  background: rgba(15, 15, 15, 0.5);
+  border-radius: 15%;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  display: flex;
+  position: absolute;
+  top: 3.5rem;
+  width: 80%;
+}
+
+.tarjeta.first{
+  background-image: url(compromiso.jpg);
+
+}
+
+.tarjeta.second{
+  background-image: url(calidad.webp);
+
+}
+
+.tarjeta.third{
+  background-image: url(competitividad.jpg);
+
+}
+
+
+.tarjeta.first .descripcion {
+margin-top: 3vh;
+}
+
+
+
+.tarjetas .tarjeta:hover{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+
+    box-shadow: 0px 0px 20px  black, 0px 0px 20px  black;
+    transform: scale(1.05);
+    transition: all 200ms, background-color .5s;
+}
+.tarjetas .tarjeta:hover .descripcion{
+  transform: scale(1.3);
+  transition: all 300ms;
+
+}
+
 
 
 footer{
-
+  position: absolute;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 0%,
