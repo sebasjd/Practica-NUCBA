@@ -12,7 +12,6 @@ body {
     rgb(218, 219, 204) 48%,
     rgb(174, 173, 173) 100%
   );
-
 }
 
 nav {
@@ -146,9 +145,9 @@ section .slogan {
   position: absolute;
   font-size: 3rem;
   text-align: center;
-  letter-spacing: 0.1vw 0.vw;
+  letter-spacing: 0.1vw 0vw;
   top: 5vw;
-min-width: 50%;
+  min-width: 50%;
 }
 
 .slogan span {
@@ -162,7 +161,7 @@ section p {
   top: auto;
   bottom: 25vh;
   font-weight: bold;
-  max-width:53%;
+  max-width: 53%;
 }
 
 #inicio ul {
@@ -263,24 +262,22 @@ section img {
   width: 30rem;
 }
 
-
 /* ###  Por que nosotros?  ### */
 
-.porQueNosotros{
+.porQueNosotros {
   height: 93vh;
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(10, 10, 10, 0.44861694677871145) 7%,
-    rgba(255, 248, 248, 0) 16%
-  ),
-  linear-gradient(
-    180deg,
-    rgba(255, 248, 248, 0) 85%,
-    rgba(10, 10, 10, 0.44861694677871145) 95%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(10, 10, 10, 0.44861694677871145) 7%,
+      rgba(255, 248, 248, 0) 16%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 248, 248, 0) 85%,
+      rgba(10, 10, 10, 0.44861694677871145) 95%,
+      rgba(0, 0, 0, 1) 100%
+    );
 }
 .porQueNosotros h1 {
   margin-top: 0vh;
@@ -302,8 +299,6 @@ section img {
   margin-left: 0;
 }
 
-
-
 .tarjetas .tarjeta {
   display: flex;
   justify-content: center;
@@ -317,9 +312,8 @@ section img {
   padding: 1rem;
   position: relative;
   background-blend-mode: darken;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 
 .tarjeta .nombre {
   font-weight: bold;
@@ -348,138 +342,248 @@ section img {
   width: 80%;
 }
 
-.tarjeta.first{
+.tarjeta.first {
   background-image: url(compromiso.jpg);
-
 }
 
-.tarjeta.second{
+.tarjeta.second {
   background-image: url(calidad.webp);
-
 }
 
-.tarjeta.third{
+.tarjeta.third {
   background-image: url(competitividad.jpg);
-
 }
-
 
 .tarjeta.first .descripcion {
-margin-top: 3vh;
+  margin-top: 3vh;
 }
 
+.tarjetas .tarjeta:hover {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
 
-
-.tarjetas .tarjeta:hover{
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0);
-
-    box-shadow: 0px 0px 20px  black, 0px 0px 20px  black;
-    transform: scale(1.05);
-    transition: all 200ms, background-color .5s;
+  box-shadow: 0px 0px 20px black, 0px 0px 20px black;
+  transform: scale(1.05);
+  transition: all 200ms, background-color 0.5s;
 }
-.tarjetas .tarjeta:hover .descripcion{
+.tarjetas .tarjeta:hover .descripcion {
   transform: scale(1.3);
   transition: all 300ms;
-
 }
 
-
-
-footer{
-  position: absolute;
+footer {
+  position: relative;
   background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(10, 10, 10, 0.44861694677871145) 15%,
-      rgba(255, 248, 248, 0) 25%
-    );
-    padding-top: 3vh;
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 10, 10, 0.44861694677871145) 15%,
+    rgba(255, 248, 248, 0) 25%
+  );
+  padding-top: 3vh;
 }
 
-footer ul{
+footer ul {
   width: 500px;
   display: flex;
 }
-footer a{
+footer a {
   margin: 0 5vw;
   bottom: 25%;
 }
+
+/* ### Como lo hacemos? ### */
+
+.como {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(10, 10, 10, 0.44861694677871145) 7%,
+      rgba(255, 248, 248, 0) 16%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 248, 248, 0) 85%,
+      rgba(10, 10, 10, 0.44861694677871145) 95%,
+      rgba(0, 0, 0, 1) 100%
+    );
+}
+
+.como h1 {
+  margin-top: 0vh;
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  letter-spacing: 0.1vw;
+  justify-content: center;
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
+  padding-top: 5vh;
+}
+
+.redondos {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.redondo {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 15vw;
+  align-items: center;
+  margin-top: 1vh;
+  margin-left: 0;
+  border: solid 3px black;
+  border-radius: 0 15%;
+  padding: 3vh 2vw;
+  margin: 1vw 0;
+  box-shadow: 0px 0px 20px black, 0px 0px 20px black;
+  background: linear-gradient(
+    90deg,
+    rgb(136, 139, 115) 0%,
+    rgb(213, 216, 170) 48%,
+    rgb(173, 174, 155) 100%
+  );
+  border: solid 0.2vw;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.redondo .numero {
+  border-radius: 50%;
+  box-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+    0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
+  color: rgb(0, 0, 0);
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2.5vw;
+  margin-bottom: 2vh;
+}
+
+.redondo .nombre {
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2vw;
+  text-decoration: underline;
+  margin-bottom: 2vh;
+}
+
+
+.redondos .redondo:hover .descripcion {
+  color: rgb(252, 252, 155);
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
+.redondos .redondo:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(97, 100, 84) 0%,
+    rgb(141, 145, 113) 48%,
+    rgb(111, 112, 100) 100%
+  );
+
+  transition: all 300ms;
+}
+
+.redondos .redondo:hover .numero {
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+  0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
+box-shadow: none;
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+.redondos .redondo:hover .nombre {
+  text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
+  0 0 3px rgb(252, 252, 155), 0 0 3px rgb(252, 252, 155), 0 0 3px rgb(252, 252, 155), 0 0 3px rgb(252, 252, 155);
+
+
+}
+
 
 
 /* ############
    #RESPONSIVE#
    ############ */
 
-   
-   @media screen and (max-device-width: 850px) {
-    /* SE REDUCE LA NAV */
+@media screen and (max-device-width: 850px) {
+  /* SE REDUCE LA NAV */
 
-    .logo {
-      margin-right: 0px;
-      padding-right: 0;
-    }
-
-    .links{
-      padding: 0;
-      padding-right: 6vw;
-      margin-left: 0;
-    }
-
-    .links .volver{
-      display: inline-block;
-    }
-
-    .links .quienes, 
-    .links .contacto {
-      display: none;
-    }
+  .logo {
+    margin-right: 0px;
+    padding-right: 0;
   }
 
+  .links {
+    padding: 0;
+    padding-right: 6vw;
+    margin-left: 0;
+  }
 
- 
+  .links .volver {
+    display: inline-block;
+  }
 
-   @media screen and (max-device-width: 700px) {
-
-    section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-     
-    section .slogan {
-      font-size: 250%;
-      max-width:90%;
-    }
-
-    section p {
-      bottom: 50vh;
-      max-width:90%;
-    }
-
-    section img {
-      bottom: 5%;
-      margin-left: 25%;
-      margin-right: 25%;
-
-    }
-     
-    #inicio a {
-  top: auto;
-  bottom: -35vh;
-  margin: 0 3vw;
+  .links .quienes,
+  .links .contacto {
+    display: none;
+  }
 }
 
-#inicio ul {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 0;
-}
+@media screen and (max-device-width: 700px) {
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section .slogan {
+    font-size: 250%;
+    max-width: 90%;
+  }
+
+  section p {
+    bottom: 50vh;
+    max-width: 90%;
+  }
+
+  section img {
+    bottom: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  #inicio a {
+    top: auto;
+    bottom: -35vh;
+    margin: 0 3vw;
+  }
+
+  #inicio ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media screen and (max-device-width: 542px) {
-
   /* Menú hamburguesa y slim design */
 
   .links {
@@ -504,22 +608,20 @@ footer a{
     bottom: auto;
     width: 75%;
     margin: 0 6%;
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
-footer{
+footer {
   display: none;
 }
 
-
 @media screen and (max-device-width: 372px) {
-
-section .slogan {
-  font-size: 10vw;
-}
-section p {
-  top: auto;
-  bottom: 10vh;
-}
+  section .slogan {
+    font-size: 10vw;
+  }
+  section p {
+    top: auto;
+    bottom: 10vh;
+  }
 }
