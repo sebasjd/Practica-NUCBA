@@ -498,6 +498,7 @@ footer a {
 .redondos .redondo:hover .descripcion {
   color: rgb(252, 252, 155);
   transform: scale(1.1);
+  letter-spacing: .02vw;
   transition: all 300ms;
 }
 
