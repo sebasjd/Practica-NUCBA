@@ -265,7 +265,7 @@ section img {
 /* ###  Por que nosotros?  ### */
 
 .porQueNosotros {
-  height: 93vh;
+  height: 97vh;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 0%,
@@ -454,6 +454,13 @@ footer a {
   color: black;
   font-weight: bold;
   text-decoration: none;
+  transition: all 300ms;
+
+}
+
+.redondo .descripcion {
+  transition: all 300ms;
+
 }
 
 .redondo .numero {
@@ -469,6 +476,8 @@ footer a {
   font-weight: bold;
   font-size: 2.5vw;
   margin-bottom: 2vh;
+  transition: all 300ms;
+
 }
 
 .redondo .nombre {
@@ -481,6 +490,8 @@ footer a {
   font-size: 2vw;
   text-decoration: underline;
   margin-bottom: 2vh;
+  transition: all 300ms;
+
 }
 
 
@@ -512,6 +523,7 @@ box-shadow: none;
 .redondos .redondo:hover .nombre {
   text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black,
   0 0 3px rgb(252, 252, 155), 0 0 3px rgb(252, 252, 155), 0 0 3px rgb(252, 252, 155), 0 0 3px rgb(252, 252, 155);
+  transition: all 300ms;
 
 
 }
