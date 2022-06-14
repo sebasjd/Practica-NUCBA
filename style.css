@@ -127,7 +127,6 @@ nav a {
 }
 
 section {
-  display: flex;
   padding-left: 3vw;
   padding-right: 6vw;
   padding-top: 9vh;
@@ -244,6 +243,7 @@ section img {
 }
 
 #quienesSomos p {
+  columns: 3;
   font-size: 1.2rem;
   display: block;
   top: 116vh;
