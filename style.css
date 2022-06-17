@@ -459,7 +459,8 @@ footer a {
 /* #### Clientes ####*/
 
 #clientes {
-    height: 100vh;
+    height: 95vh;
+    background: linear-gradient( 180deg, rgba(0, 0, 0, 1) 0%, rgba(10, 10, 10, 0.44861694677871145) 7%, rgba(255, 248, 248, 0) 16%), linear-gradient( 180deg, rgba(255, 248, 248, 0) 85%, rgba(10, 10, 10, 0.44861694677871145) 95%, rgba(0, 0, 0, 1) 100%);
 }
 
 #clientes h1 {
@@ -470,7 +471,8 @@ footer a {
     letter-spacing: 0.1vw;
     justify-content: center;
     text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
-    padding-top: 10vh;
+    padding-top: 5vh;
+    margin-top: 0;
 }
 
 .clientes {
@@ -488,39 +490,117 @@ footer a {
     display: flex;
     justify-content: center;
     position: relative;
-    border: solid 2px black;
     text-shadow: -0.5px -0.5px 0rem black, -0.5px -0.5px 0rem black, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow, 0 0 1rem yellow;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     width: 15vw;
     height: 15vw;
     margin-left: 0;
     font-weight: bold;
     font-size: 0vh;
-    transition: all 300ms;
+    align-items: center;
+    transition: all 500ms;
+}
+
+.cliente.first {
+    background-image: url("./Escudo\ fondo\ negro.jpg");
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 500ms;
+}
+
+.cliente.second {
+    background-image: url("./Escudo\ fondo\ negro.jpg");
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 500ms;
+}
+
+.cliente.third {
+    background-image: url("./Escudo\ fondo\ negro.jpg");
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 500ms;
+}
+
+.cliente.fourth {
+    background-image: url("./Escudo\ fondo\ negro.jpg");
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 500ms;
+}
+
+.cliente.fifth {
+    background-image: url("./Escudo\ fondo\ negro.jpg");
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 500ms;
+}
+
+.cliente.first:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 500ms;
+}
+
+.cliente.second:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 500ms;
+}
+
+.cliente.third:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 500ms;
+}
+
+.cliente.fourth:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 500ms;
+}
+
+.cliente.fifth:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 500ms;
 }
 
 .cliente.first:hover .clientename1 {
-    font-size: 8vh;
+    background-size: cover;
+    background-position: right;
+    font-size: 5vw;
     transition: all 500ms;
 }
 
 .cliente.second:hover .clientename2 {
-    font-size: 8vh;
+    font-size: 5vw;
     transition: all 500ms;
 }
 
 .cliente.third:hover .clientename3 {
-    font-size: 8vh;
+    font-size: 5vw;
     transition: all 500ms;
 }
 
 .cliente.fourth:hover .clientename4 {
-    font-size: 8vh;
+    font-size: 5vw;
     transition: all 500ms;
 }
 
 .cliente.fifth:hover .clientename5 {
-    font-size: 8vh;
+    font-size: 5vw;
     transition: all 500ms;
 }
 
